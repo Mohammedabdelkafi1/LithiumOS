@@ -1,10 +1,24 @@
 [org 0x7C00]
-bits 16
-mov ah, 0x0e
-mov al, [bootStr]
-int 0x10
-jmp $
+
+start:
+    mov ah, 0x0e
+    mov bx, bootStr
+
+printStr:
+    mov al, [bx]
+    cmp al, 0
+    je end
+    int 0x10
+    inc bx
+    jmp printStr
+
+end:
+    cli
+    hlt
+    jmp $
+
 bootStr:
-    db "booting . . . ", 0
+    db "Booting . . .", 0
+
 times 510-($-$$) db 0
 dw 0xAA55
