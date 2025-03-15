@@ -2,7 +2,7 @@
 An open-source Windows alternative made in C
 # Lead contributors
 Mohammed Abdelkafi
-#haters
+# haters
 reddit: nerd4code
 
 
