@@ -4,6 +4,11 @@ An open-source Windows alternative made in C
 Mohammed Abdelkafi
 # haters
 reddit: nerd4code
+# People that actually helped me :)
+- BirdGuy
+- Stierprogrammer
+- FrostyNova
+- ThunderChaser (reddit)
 
 
 
